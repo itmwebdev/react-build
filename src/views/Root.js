@@ -1,31 +1,27 @@
-import React, {useEffect, useState} from "react";
-import styled from 'styled-components';
+import React  from "react";
 import {GlobalStyle} from "../assets/styles/GlobalStyle";
-import {Helmet} from "react-helmet";
-import style from 'index.css';
+import style from 'index.css'
+import Header from "../components/templates/Header/Header";
+import Footer from '../components/templates/Footer/Footer'
+import Home from "../pages/Home";
 
 
 
 const Root = () => {
-    const metaData = {
-        title: 'Default Title',
-        description: ' My Default Description'
-    }
-
-    const metaTitle = {
-        title: 'My title'
-    }
-    useEffect(() => {
-    //    Sanity API
-    }, []);
 
     return (
         <>
-            <Helmet>
-                <title>{metaTitle.title}</title>
-                <meta name="description" content={metaData.description} />
-                <GlobalStyle/>
-            </Helmet>
+            <GlobalStyle/>
+            <div className='mx-auto w-full'>
+
+                <div className='' >
+                    <Header/>
+                    <Home/>
+                    <Footer/>
+                </div>
+            </div>
+
+
         </>
     )
 }

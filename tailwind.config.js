@@ -6,23 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#091120",
+        primary: "#1c1c1c",
         secondary: "#DFD5A5",
-        opacitySec: "rgba(228, 220, 180, 0.3)",
-        textWhite: "rgba(255, 255, 255, 0.7)",
-        textHeader: "rgba(255, 255, 255, 0.9)",
+        bgColor: "#1c1c1c",
       },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
-    },
-    screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
     },
   },
   plugins: [],
